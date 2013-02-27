@@ -1,0 +1,344 @@
+p, span { margin: 0px; padding: 0px}
+html {margin: 0px; height: 100%;}
+/****************************************************************************/
+/***********************************Header***********************************/
+/****************************************************************************/
+header
+{
+    /*background-image: url('../images/fond-rouge.jpg'); */
+   
+}
+
+#bandeau_top
+{
+    background-color: #8E0000;
+    border: 7px #E65C00 groove;
+}
+
+h1
+ {
+     margin-top: 0px;
+     margin-bottom: 15px;
+ }
+ 
+.logo
+{
+    height: 70px;
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.titre
+{
+    height: 45px;
+    margin-left: 20px;
+}
+
+.texte_titre
+{
+    padding-bottom: 10px;
+    margin-left: 420px;
+    color: #E68A00;
+}
+
+/****************************************************************************/
+/***********************************Header***********************************/
+/****************************************************************************/
+
+/****************************************************************************/
+/************************************Menu************************************/
+/****************************************************************************/
+
+nav li
+{
+    display: inline-block;
+    margin-right: 0px;
+}
+
+#menu, #menu ul /* Liste */     
+{
+        padding : 0px; /* pas de marge int�rieure */
+        margin : 0px; /* ni ext�rieure */
+        list-style : none; /* on supprime le style par d�faut de la liste */
+        line-height : 21px; /* on d�finit une hauteur pour chaque �l�ment */
+        text-align : center; /* on centre le texte qui se trouve dans la liste */
+}
+
+#menu /* Ensemble du menu */
+{
+        height: 50px;
+        display: block;
+        margin-top: 0px;
+        font-weight : bold; /* on met le texte en gras */
+        font-family : Arial; /* on utilise Arial, c'est plus beau ^^ */
+        font-size : 12px; /* hauteur du texte : 12 pixels */
+}
+
+#menu a /* Contenu des listes */
+{
+        display : block; /* on change le type d'�l�ment, les liens deviennent des balises de type block */
+        padding : 0px; /* aucune marge int�rieure */
+        background : transparent; /* couleur de fond */        
+        color : #fff; /* couleur du texte */
+        text-decoration : none; /* on supprime le style par d�faut des liens (la plupart du temps = soulign�) */
+        width : 144px; /* largeur */
+        height: 30px;
+        line-height: 30px;
+}
+
+#menu li /* Elements des listes */      
+{ 
+        float : left; 
+}
+
+/* IE ne reconnaissant pas le s�lecteur ">" */
+html>body #menu li
+{
+        border-right: 1px solid transparent ; /* on met une bordure transparente � droite de chaque �l�ment */
+}
+
+#menu li ul /* Sous-listes */
+{ 
+        position: absolute; /* Position absolue */
+        width: 144px; /* Largeur des sous-listes */
+        left: -999em; /* Hop, on envoie loin du champ de vision */
+        z-index: 10;
+}
+
+
+#menu li ul li /* �l�ments de sous-listes */
+{
+        /* pour IE qui ne reconna�t pas "transparent" (comme pr�c�demment) */
+        border-top : 1px solid #fff; /* on met une bordure blanche en haut de chaque �l�ment d'une sous liste */
+}
+
+/* IE ne reconnaissant pas le s�lecteur ">" */
+html>body #menu li ul li                
+{
+        border-top : 1px solid transparent; /* on met une bordure transparente en haut de chaque �l�ment */
+}
+
+#menu li ul ul 
+{
+        margin    : -22px 0 0 144px ; /* On d�cale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */ 
+        /* pour IE qui ne reconna�t pas "transparent" (comme pr�c�demment) */
+        border-left     : 1px solid #fff ; /* Petite bordure � gauche pour ne pas coller ... */      
+}
+
+
+html > body #menu li ul ul                
+{
+        border-left     : 1px solid transparent ; /* on met une bordure transparente sur la gauche de chaque �l�ment */
+}
+
+#menu a:hover /* Lorsque la souris passe sur un des liens */    
+{
+        color: #000; /* On passe le texte en noir... */
+        background: transparent; /* ... et au contraire, le fond en blanc */
+}
+
+#menu li:hover ul ul, #menu li.sfhover ul ul /* Sous-sous-listes lorsque la souris passe sur un �l�ment de liste */
+{
+        left: -999em; /* On exp�die les sous-sous-listes hors du champ de vision */
+}
+
+#menu li:hover ul, #menu li li:hover ul, #menu li.sfhover ul, #menu li li.sfhover ul  /* Sous-listes lorsque la souris passe sur un �l�ment de liste ET sous-sous-lites lorsque la souris passe sur un �l�ment de sous-liste */
+{
+        left: auto; /* Repositionnement normal */
+}
+/****************************************************************************/
+/************************************Menu************************************/
+/****************************************************************************/
+
+/**********************************Bouton************************************/
+
+.button  {
+border-top: 1px solid #ffffff;
+border-left: 1px solid #ffffff;
+border-bottom: 1px solid grey;
+background: #000000;
+background: -webkit-gradient(linear, left top, left bottom, from(#2f363b), to(#000000));
+background: -webkit-linear-gradient(top, #2f363b, #000000);
+background: -moz-linear-gradient(top, #2f363b, #000000);
+background: -ms-linear-gradient(top, #2f363b, #000000);
+background: -o-linear-gradient(top, #2f363b, #000000);
+/*padding: 7px 14px;*/
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+box-shadow: rgba(0,0,0,1) 0 1px 0;
+text-shadow: rgba(0,0,0,.4) 0 1px 0;
+font-size: 16px;
+font-family: Georgia, serif;
+text-decoration: none;
+vertical-align: middle;
+z-index: 10;
+margin-top: 10px;
+margin-left: 10px;
+}
+
+.accueil {
+    margin-left: 30px;
+}
+
+.button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   z-index: 10;
+   }
+
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   z-index: 10;
+   }
+
+/**********************************Bouton************************************/
+
+/****************************************************************************/
+/***********************************Corps************************************/
+/****************************************************************************/
+body
+{
+    width: 1024px;
+    height: available; 
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../images/fond.jpg');
+    background-size: cover;
+    
+    
+}
+
+#bloc_page section
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    border:  3px dashed #E68A00 ;
+    position: absolute;
+    width: 1024px;
+  
+    
+    
+    
+}
+
+article
+{
+    margin: 0px;
+    margin-bottom: 10px;
+    width: 500px;
+    float: left;
+ 
+}
+
+article p
+{
+    margin-left: 20px;
+    color: black;
+}
+
+aside
+{
+    width: 300px;
+    height: 350px;
+    float: right;
+    padding-right: 150px;
+   
+    
+}
+
+h2
+{
+    color: coral;
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.fauteuil_acc
+{
+    margin-top: 40px;
+    height: 338px;
+    width: 450px;
+}
+
+#bloc_page
+{
+    margin: auto;
+}    
+    
+   
+/****************************************************************************/
+/***********************************Corps************************************/
+/****************************************************************************/
+
+/****************************************************************************/
+/**********************************Footer************************************/
+/****************************************************************************/
+
+footer 
+{
+    border: 7px #E65C00 groove;
+    background-color: #8E0000;
+    background-size: contain;
+    margin: 0px;
+    padding: 0px;
+    height: 100px;
+   
+}
+
+.icone
+{
+float: left;
+margin-top: 15px;
+margin-left: 50px;
+}
+
+#suivez_nous p
+{
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 100px;
+    color: #E68A00;
+    font-size: 13px;
+    display: inline-block;
+    float: left;
+    
+}
+
+a.infobulle
+{
+    position: relative; 
+}
+
+ a.infobulle span  
+{  
+    position: absolute;  
+    top:-2000em;  
+    left:-2000em;  
+    width:1px;  
+    height:1px;  
+    overflow:hidden;  
+    background:#DDEEFF; /* Définition du fond, sinon on a le même que notre lien */ 
+    /*border:1px solid #6699FF; /* Définition des bordures */
+} 
+  
+a.infobulle:hover span, a.infobulle:focus span, a.infobulle:active span  
+{  
+    text-align: center;
+    top:auto;  
+    left:auto;  
+    width:65px;  
+    height:auto;  
+    overflow:visible;  
+}
+
+/****************************************************************************/
+/**********************************Footer************************************/
+/****************************************************************************/
+
