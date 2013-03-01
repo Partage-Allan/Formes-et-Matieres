@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <link rel="stylesheet" href="./css/f_et_m.css"/>
-       
+        <?php require ('template.php');?>
         <script type="text/javascript" src="./js/jsmenuderoulant.js"></script>
         <script type="text/javascript" src="./js/jquery-1.8.3.js"></script>
         <script type="text/javascript" src="./js/jquery-ui-1.9.2.custom.min.js"></script>
@@ -13,7 +13,7 @@
     </head>
     <body>
         <div id="bloc_page">
-            <?php include("header.php"); ?>
+            <?php afficher_header();?>
             <section>
                 <article>
                         <h2>Présentation</h2>
@@ -42,7 +42,7 @@
                     </ul>
                 </aside> 
             </section>
-            <?php include("footer.php"); ?>
+            <?php afficher_footer();?>
         </div>
     </body>
 </html>
