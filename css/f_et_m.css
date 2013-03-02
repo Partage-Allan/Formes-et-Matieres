@@ -210,45 +210,45 @@ body
     margin-right: auto;
     background-image: url('../images/fond.jpg');
     background-size: cover;
-    
-    
 }
 
-#bloc_page section
+.corps
 {
     background-color: rgba(255, 255, 255, 0.7);
     border:  3px dashed #E68A00 ;
-    position: absolute;
-    width: 1024px;
-  
-    
-    
-    
+    width: 1018px;
+    height: 800px;
 }
 
-article
+.div_corps_gauche
 {
     margin: 0px;
     margin-bottom: 10px;
     width: 500px;
     float: left;
- 
 }
 
-article p
+.div_corps_gauche p
 {
     margin-left: 20px;
     color: black;
 }
 
-aside
+.div_corps_droit
 {
-    width: 300px;
-    height: 350px;
-    float: right;
-    padding-right: 150px;
-   
-    
+    width: 400px;
+    height: 450px;
+    float: left;
+}
+
+#galleria
+{ 
+    width: 400px; 
+    height:450px; 
+    background: #000; 
+    float: left;
+    margin-left: 70px;
+    margin-top: 60px;
 }
 
 h2
@@ -267,12 +267,7 @@ h2
     width: 450px;
 }
 
-#bloc_page
-{
-    margin: auto;
-}    
-    
-   
+
 /****************************************************************************/
 /***********************************Corps************************************/
 /****************************************************************************/
@@ -285,11 +280,10 @@ footer
 {
     border: 7px #E65C00 groove;
     background-color: #8E0000;
-    background-size: contain;
     margin: 0px;
     padding: 0px;
     height: 100px;
-   
+    clear: both;
 }
 
 .icone

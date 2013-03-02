@@ -6,14 +6,14 @@
 			delay: 3,
 			animationSpeed: "normal",
 			controls: true,
-			status_controls: true,
+			status_controls: false,
 			keyboard: true,
-			infos: true,
-			currentimage: true,
+			infos: false,
+			currentimage: false,
 			paused: false,
 			boucles: 0,
 			sens: "right",
-			onrollover: true,
+			onrollover: false,
 			random: false
 		};
 				
