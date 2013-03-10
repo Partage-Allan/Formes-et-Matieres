@@ -79,12 +79,12 @@ nav li
 {
         display : block; /* on change le type d'�l�ment, les liens deviennent des balises de type block */
         padding : 0px; /* aucune marge int�rieure */
-        background : transparent; /* couleur de fond */        
+        background : #B28F47; /* couleur de fond */        
         color : #fff; /* couleur du texte */
         text-decoration : none; /* on supprime le style par d�faut des liens (la plupart du temps = soulign�) */
-        width : 144px; /* largeur */
-        height: 30px;
-        line-height: 30px;
+        width : 120px; /* largeur */
+        height: 25px;
+        line-height: 25px;
 }
 
 #menu li /* Elements des listes */      
@@ -135,7 +135,7 @@ html > body #menu li ul ul
 #menu a:hover /* Lorsque la souris passe sur un des liens */    
 {
         color: #000; /* On passe le texte en noir... */
-        background: transparent; /* ... et au contraire, le fond en blanc */
+        background: #C9B17E; /* ... et au contraire, le fond en blanc */
 }
 
 #menu li:hover ul ul, #menu li.sfhover ul ul /* Sous-sous-listes lorsque la souris passe sur un �l�ment de liste */
@@ -153,7 +153,8 @@ html > body #menu li ul ul
 
 /**********************************Bouton************************************/
 
-.button  {
+.button ,.button_conf_ori
+{
 border-top: 1px solid #ffffff;
 border-left: 1px solid #ffffff;
 border-bottom: 1px solid grey;
@@ -164,34 +165,38 @@ background: -moz-linear-gradient(top, #2f363b, #000000);
 background: -ms-linear-gradient(top, #2f363b, #000000);
 background: -o-linear-gradient(top, #2f363b, #000000);
 /*padding: 7px 14px;*/
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
 -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
 -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
 box-shadow: rgba(0,0,0,1) 0 1px 0;
 text-shadow: rgba(0,0,0,.4) 0 1px 0;
-font-size: 16px;
+font-size: 14px;
 font-family: Georgia, serif;
 text-decoration: none;
 vertical-align: middle;
 z-index: 10;
 margin-top: 10px;
 margin-left: 10px;
+width: 115px;
 }
 
-.accueil {
+
+.accueil 
+    {
     margin-left: 30px;
-}
+    }
 
-.button:hover {
+
+.button:hover .button_conf_ori:hover{
    border-top-color: #28597a;
    background: #28597a;
    color: #ccc;
    z-index: 10;
    }
 
-.button:active {
+.button:active .button_conf_ori:active{
    border-top-color: #1b435e;
    background: #1b435e;
    z-index: 10;
