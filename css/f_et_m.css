@@ -17,8 +17,13 @@ header
 
 h1
  {
-     margin-top: 0px;
+     font-size: 17px;
+     margin-top: 5px;
      margin-bottom: 15px;
+     text-align: center;
+     color: #993333;
+     width: 970px; 
+     text-decoration: none;
  }
  
 .logo
@@ -82,7 +87,7 @@ nav li
         background : #B28F47; /* couleur de fond */        
         color : #fff; /* couleur du texte */
         text-decoration : none; /* on supprime le style par d�faut des liens (la plupart du temps = soulign�) */
-        width : 120px; /* largeur */
+        width : 115px; /* largeur */
         height: 25px;
         line-height: 25px;
 }
@@ -101,7 +106,7 @@ html>body #menu li
 #menu li ul /* Sous-listes */
 { 
         position: absolute; /* Position absolue */
-        width: 144px; /* Largeur des sous-listes */
+        width: 115px; /* Largeur des sous-listes */
         left: -999em; /* Hop, on envoie loin du champ de vision */
         z-index: 10;
 }
@@ -121,7 +126,7 @@ html>body #menu li ul li
 
 #menu li ul ul 
 {
-        margin    : -22px 0 0 144px ; /* On d�cale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */ 
+        margin    : 0 0 0 144px ; /* On d�cale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */ 
         /* pour IE qui ne reconna�t pas "transparent" (comme pr�c�demment) */
         border-left     : 1px solid #fff ; /* Petite bordure � gauche pour ne pas coller ... */      
 }
@@ -129,7 +134,7 @@ html>body #menu li ul li
 
 html > body #menu li ul ul                
 {
-        border-left     : 1px solid transparent ; /* on met une bordure transparente sur la gauche de chaque �l�ment */
+        border-left: 1px solid transparent ; /* on met une bordure transparente sur la gauche de chaque �l�ment */
 }
 
 #menu a:hover /* Lorsque la souris passe sur un des liens */    
@@ -153,7 +158,7 @@ html > body #menu li ul ul
 
 /**********************************Bouton************************************/
 
-.button ,.button_conf_ori
+.button 
 {
 border-top: 1px solid #ffffff;
 border-left: 1px solid #ffffff;
@@ -182,6 +187,36 @@ margin-left: 10px;
 width: 115px;
 }
 
+.button_spe_1
+{
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-bottom: 1px solid grey;
+    background-color: #000000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2f363b), to(#000000));
+    background: -webkit-linear-gradient(top, #2f363b, #000000);
+    background: -moz-linear-gradient(top, #2f363b, #000000);
+    background: -ms-linear-gradient(top, #2f363b, #000000);
+    background: -o-linear-gradient(top, #2f363b, #000000);
+    /*padding: 7px 14px;*/
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    font-size: 14px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    vertical-align: middle;
+    z-index: 10;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 115px;
+    height: 50px;
+}
+
 
 .accueil 
     {
@@ -189,20 +224,22 @@ width: 115px;
     }
 
 
-.button:hover .button_conf_ori:hover{
+.button:hover .button_spe_1:hover{
    border-top-color: #28597a;
    background: #28597a;
    color: #ccc;
    z-index: 10;
    }
 
-.button:active .button_conf_ori:active{
+.button:active .button_spe_1:active{
    border-top-color: #1b435e;
    background: #1b435e;
    z-index: 10;
    }
-
+   
+/****************************************************************************/
 /**********************************Bouton************************************/
+/****************************************************************************/
 
 /****************************************************************************/
 /***********************************Corps************************************/
@@ -215,13 +252,14 @@ body
     margin-right: auto;
     background-image: url('../images/fond.jpg');
     background-size: cover;
+    
 }
 
 .corps
 {
     background-color: rgba(255, 255, 255, 0.7);
-    border:  3px dashed #E68A00 ;
-    width: 1018px;
+    border:  1px solid #E68A00 ;
+    width: 1022px;
     height: 800px;
 }
 
@@ -258,11 +296,12 @@ body
 
 h2
 {
-    color: coral;
+    color: #993333;
     margin: 0px;
     margin-bottom: 10px;
     margin-top: 10px;
     text-align: center;
+    text-decoration: none;
 }
 
 .fauteuil_acc
@@ -273,9 +312,30 @@ h2
 }
 
 
+
+
+.corps_presentation
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    border:  1px solid #E68A00 ;
+    width: 1018px;
+    height: 800px;
+}
+
+.corps_creations
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    border:  1px solid #E68A00 ;
+    width: 1018px;
+    height: 800px;
+}
+
 /****************************************************************************/
-/***********************************Corps************************************/
+/***********************************Fin Corps********************************/
 /****************************************************************************/
+
+
+
 
 /****************************************************************************/
 /**********************************Footer************************************/
@@ -340,4 +400,74 @@ a.infobulle:hover span, a.infobulle:focus span, a.infobulle:active span
 /****************************************************************************/
 /**********************************Footer************************************/
 /****************************************************************************/
+
+/****************************************************************************/
+/********************************Paragraphe**********************************/
+/****************************************************************************/
+
+.div_corps_gauche .paragraphe_1
+{
+    margin-left: 25px;
+    color: #B20000;
+    width: 480px;
+    height: 600px;
+}
+
+.corps_presentation .paragraphe_2, .paragraphe_1
+{
+    margin-left: 25px;
+    color: #B20000;
+    width: 1021px;
+    height: 600px;
+}
+
+.categorie .paragraphe_3
+{
+    display: inline-block;
+    width: 270px;
+    margin-left: 50px;
+    color: #B20000;
+}
+
+/****************************************************************************/
+/****************************Fin Paragraphe**********************************/
+/****************************************************************************/
+
+/****************************************************************************/
+/****************************Catégorie Photos********************************/
+/****************************************************************************/
+
+.categorie
+{
+    width: 970px;
+    height: 200px;
+    border: 1px solid #E68A00;
+    background-color: #D5CCC4;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+
+.img_mini
+{
+    margin-left: 100px;
+    padding-bottom: 15px;
+}
+
+
+/****************************************************************************/
+/****************************Fin Catégorie Photos****************************/
+/****************************************************************************/
+
+.fil_ariane
+{   
+    font-size: 13px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+section a, p
+{
+    text-decoration: none;
+}
+
 

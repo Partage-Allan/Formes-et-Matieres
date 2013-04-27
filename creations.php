@@ -16,26 +16,31 @@
     <h2>Mes créations</h2>
     
     <section class="choix_photos">
+        <a href="la_maison.php">
         <div class="categorie">
             <h1>La maison</h1>
              <img class="img_mini" src="images/fauteuil-blanc-mini.JPG" data-title="Fauteuil Blanc"/>
              <img class="img_mini" src="images/fauteuil-2-mini.JPG" data-title="Fauteuil-2"/>
+             <img class="img_mini" src="images/fauteuil-1-mini.JPG" data-title="Fauteuil-2"/>
              <p class="paragraphe_3">Toutes mes créations pour l'intérieur, des fauteuils, des poufs, tabourets... </p>
         </div><br/>
+        </a>
+        <a href="le_jardin.php">
         <div class="categorie">
             <h1>Le jardin</h1>
              <img class="img_mini" src="images/porte-plante-RN-mini.JPG" data-title="porte-plante rouge et noir"/>
              <img class="img_mini" src="images/porte-plante-NB-mini.JPG" data-title="porte-plante noir et blanc"/>
              <img class="img_mini" src="images/jardin-rose-mini.jpg" data-title="porte-plante noir et blanc"/>
-            
         </div><br/>
+        </a>
+        <a href="le_dans_la_poche.php">
         <div class="categorie">
             <h1>Dans la poche</h1>
              <img class="img_mini" src="images/porte-carte-mini.JPG" data-title="porte carte"/>
              <img class="img_mini" src="images/etuit-rouge-mini.JPG" data-title="etuit-rouge"/>
              <img class="img_mini" src="images/blague-a-tabac-mini.JPG" data-title="blague à tabac"/>
-            
         </div>
+        </a>    
     </section>
               
 </div>

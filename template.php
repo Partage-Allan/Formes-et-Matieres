@@ -4,23 +4,23 @@
 /********************************************************************************************************************************/
 function afficher_header() 
 {
-    printf("<header>");
+    printf("<header>");                                                                                                                         
     printf('<div id="bandeau_top">');
-        printf('<h1><img src="images/logo1.png" alt="logo" class="logo"/><img src="images/titre1.png" alt="titre" class="titre"/></h1>');
+        printf('<a href="index.php"><h1><img src="images/logo1.png" alt="logo" class="logo"/><img src="images/titre1.png" alt="titre" class="titre"/></h1></a>');
         printf('<p class="texte_titre">Anne-Françoise Bescond</p>');
             printf('<nav>');
                 printf('<ul id="menu">');
                     printf('<li class="accueil button"><a href="index.php">Accueil</a></li>');
-                    printf('<li class="button"><a href="#">Présentation</a></li>');
-                    printf('<li class="button"><a href="#">Créations</a>');
+                    printf('<li class="button"><a href="presentation.php">Présentation</a></li>');
+                    printf('<li class="button"><a href="creations.php">Créations</a>');
                         printf('<ul>');
-                            printf('<li class="button"><a href="#">Maison et Jardin</a></li>');
-                            printf('<li class="button"><a href="#">Dans la poche</a></li>');
-                            printf('<li class="button"><a href="#">Sellerie</a></li>');
-                            printf('<li class="button_conf_ori"><a href="#">Confection Originales</a></li>');
+                            printf('<li class="button"><a href="#">La maison</a></li>');
+                            printf('<li class="button"><a href="#">Le jardin</a></li>');
+                            printf('<li class="button"><a href="#">Dans la poche !</a></li>');
+                            printf('<li class="button_spe_1"><a href="#">Confection Originales</a></li>');
                         printf('</ul>');
                     printf('</li>');
-                    printf('<li class="button"><a href="#">News</a></li>');
+                    printf('<li class="button"><a href="test_news.php">News</a></li>');
                     printf('<li class="button"><a href="#">Contact</a></li>');
                 printf('</ul>');
             printf('</nav>');
@@ -30,6 +30,7 @@ printf('</header>');
 /*********************************************************************************************************************************/
 /*********************************************************header******************************************************************/
 /*********************************************************************************************************************************/
+
 /********************************************************afficher le footer*******************************************************/
 function afficher_footer()
 {
